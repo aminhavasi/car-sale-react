@@ -24,6 +24,7 @@ const Login = () => {
                                     type="text"
                                     className="form-control"
                                     placeholder="example@info.com"
+                                    value={}
                                     id="email"
                                 />
                             </div>
@@ -33,6 +34,7 @@ const Login = () => {
                                     type="password"
                                     className="form-control"
                                     placeholder="********"
+                                    value={}
                                     id="password"
                                 />
                             </div>
