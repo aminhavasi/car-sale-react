@@ -5,6 +5,7 @@ import { ApolloProvider } from 'react-apollo';
 import Login from './components/login';
 import Home from './components/homePage';
 import NotFound from './components/notFound';
+import Register from './components/register';
 
 const client = new apolloClient({
     uri: 'http://localhost:8000/graphQl ',
@@ -15,6 +16,7 @@ const App = () => {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/login" component={Login} />
+                <Route path="/register" component={Register} />
                 <Route path="/not-found" component={NotFound} />
                 <Redirect to="/not-found" />
             </Switch>

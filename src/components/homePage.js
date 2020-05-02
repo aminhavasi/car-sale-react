@@ -12,17 +12,7 @@ const getName = gql`
 `;
 
 const Home = (props) => {
-    const data = props.data;
-    if (data.loading) {
-        return <div>Loading ...</div>;
-    }
-    return (
-        <div>
-            {data.car.map((c) => (
-                <p key={c.id}>{c.name}</p>
-            ))}
-        </div>
-    );
+    return null;
 };
 
 export default graphql(getName)(Home);
