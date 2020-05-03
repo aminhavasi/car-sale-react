@@ -1,15 +1,19 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
     setEmail,
     setPassword,
     sendPerson,
 } from './../redux/actions/loginAction';
+import { graphql } from 'react-apollo';
 import { useDispatch, useSelector } from 'react-redux';
-const Login = () => {
+
+import { getCarQuery } from './../queries/query';
+
+const Login = (props) => {
+    console.log(props);
     const dispatch = useDispatch();
     const email = useSelector((state) => state.email);
     const password = useSelector((state) => state.password);
-    const focusInput = useRef(null);
     return (
         <div
             style={{
@@ -66,4 +70,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default graphql(getCarQuery)(Login);

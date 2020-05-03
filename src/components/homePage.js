@@ -12,7 +12,7 @@ const getName = gql`
 `;
 
 const Home = (props) => {
-    return null;
+    return <div>slm</div>;
 };
 
 export default graphql(getName)(Home);

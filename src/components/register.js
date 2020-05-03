@@ -15,7 +15,7 @@ const Register = () => {
                 <div className="container">
                     <h2 className="text-center">Register Form</h2>
                     <form>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label htmlFor="pwd">Username:</label>
                             <input
                                 type="text"
@@ -35,7 +35,7 @@ const Register = () => {
                                 name="email"
                             />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label htmlFor="pwd">Password:</label>
                             <input
                                 type="password"
