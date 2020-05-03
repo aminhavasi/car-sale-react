@@ -7,7 +7,7 @@ import {
 } from './../redux/actions/registerAction';
 import { useDispatch, useSelector } from 'react-redux';
 import { graphql } from 'react-apollo';
-import { compose } from 'recompose';
+import { compose, createEventHandler } from 'recompose';
 import { addUser, getCarQuery } from './../queries/query';
 const Register = (props) => {
     console.log(props);
@@ -15,7 +15,17 @@ const Register = (props) => {
     const email = useSelector((state) => state.emailRegister);
     const username = useSelector((state) => state.usernameRegister);
     const password = useSelector((state) => state.passwordRegister);
-
+    const handle = async () => {
+        const { data } = await props.addUser({
+            variables: {
+                name: username,
+                email: email,
+                password: password,
+            },
+        });
+        console.log('data: ', data);
+        dispatch(sendRegisterForm());
+    };
     return (
         <React.Fragment>
             <div
@@ -71,32 +81,16 @@ const Register = (props) => {
                             <button
                                 type="submit"
                                 className="btn btn-secondary "
-                                onClick={() => dispatch(sendRegisterForm())}
+                                onClick={() => handle()}
                             >
                                 Submit
                             </button>
                         </div>
                     </form>
-                    <button
-                        onClick={() =>
-                            props.addUser({
-                                variables: {
-                                    name: 'amin',
-                                    email: 'mojzed1375@gmail.com',
-                                    password: '123456789',
-                                },
-                            })
-                        }
-                    >
-                        ok
-                    </button>
                 </div>
             </div>
         </React.Fragment>
     );
 };
 
-export default compose(
-    graphql(addUser, { name: 'addUser' }),
-    graphql(getCarQuery, { name: 'get' })
-)(Register);
+export default compose(graphql(addUser, { name: 'addUser' }))(Register);

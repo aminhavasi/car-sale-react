@@ -32,9 +32,9 @@ export const clearPassword = () => {
     };
 };
 
-export const sendRegisterForm = () => {
+export const sendRegisterForm = (props) => {
     return async (dispatch) => {
-        await dispatch(clearPassword());
+        await await dispatch(clearPassword());
         await dispatch(clearEmail());
         await dispatch(clearUsername());
     };
