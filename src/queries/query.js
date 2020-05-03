@@ -6,3 +6,12 @@ export const getCarQuery = gql`
         }
     }
 `;
+
+export const addUser = gql`
+    mutation {
+        addUser(name: "", email: "", password: "") {
+            id
+            name
+        }
+    }
+`;

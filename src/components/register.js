@@ -6,6 +6,8 @@ import {
     sendRegisterForm,
 } from './../redux/actions/registerAction';
 import { useDispatch, useSelector } from 'react-redux';
+import { graphql } from 'react-apollo';
+import { addUser } from './../queries/query';
 const Register = () => {
     const dispatch = useDispatch();
     const email = useSelector((state) => state.emailRegister);
@@ -79,4 +81,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default graphql(addUser)(Register);
