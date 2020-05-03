@@ -1,5 +1,5 @@
 import { gql } from 'apollo-boost';
-export const getCarQuery = gql`
+const getCarQuery = gql`
     {
         car {
             id
@@ -7,11 +7,11 @@ export const getCarQuery = gql`
     }
 `;
 
-export const addUser = gql`
-    mutation {
-        addUser(name: "", email: "", password: "") {
+const addUser = gql`
+    mutation($name: String!, $email: String!, $password: String!) {
+        addUser(name: $name, email: $email, password: $password) {
             id
-            name
         }
     }
 `;
+export { getCarQuery, addUser };

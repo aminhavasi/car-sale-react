@@ -7,8 +7,10 @@ import {
 } from './../redux/actions/registerAction';
 import { useDispatch, useSelector } from 'react-redux';
 import { graphql } from 'react-apollo';
-import { addUser } from './../queries/query';
-const Register = () => {
+import { compose } from 'recompose';
+import { addUser, getCarQuery } from './../queries/query';
+const Register = (props) => {
+    console.log(props);
     const dispatch = useDispatch();
     const email = useSelector((state) => state.emailRegister);
     const username = useSelector((state) => state.usernameRegister);
@@ -75,10 +77,26 @@ const Register = () => {
                             </button>
                         </div>
                     </form>
+                    <button
+                        onClick={() =>
+                            props.addUser({
+                                variables: {
+                                    name: 'amin',
+                                    email: 'mojzed1375@gmail.com',
+                                    password: '123456789',
+                                },
+                            })
+                        }
+                    >
+                        ok
+                    </button>
                 </div>
             </div>
         </React.Fragment>
     );
 };
 
-export default graphql(addUser)(Register);
+export default compose(
+    graphql(addUser, { name: 'addUser' }),
+    graphql(getCarQuery, { name: 'get' })
+)(Register);
