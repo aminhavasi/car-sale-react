@@ -35,7 +35,7 @@ const Login = (props) => {
                                 <label htmlFor="email">Email:</label>
                                 <input
                                     type="text"
-                                    className="form-control"
+                                    className="form-control df"
                                     placeholder="example@info.com"
                                     value={email}
                                     onChange={(e) => dispatch(setEmail(e))}
