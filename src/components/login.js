@@ -21,7 +21,7 @@ const Login = (props) => {
                 height: '100vh',
                 backgroundColor: ' #d1e0e0',
             }}
-            className="justify-content-center align-items-center t"
+            className="justify-content-center align-items-center"
         >
             <div className="row">
                 <div className="">
