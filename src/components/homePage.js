@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './../css/homePage.css';
 
 const Home = () => {
@@ -18,6 +19,14 @@ const Home = () => {
                         شرکت خرید و فروش خودرو های ایرانی
                     </p>
                 </div>
+            </div>
+            <div className="container text-center ">
+                <Link className="m-1 btn btn-sm bg-primary" to="/login">
+                    Login
+                </Link>
+                <Link className="m-1 btn btn-sm bg-success" to="/register">
+                    register
+                </Link>
             </div>
         </React.Fragment>
     );
