@@ -6,3 +6,6 @@
     background-attachment: fixed;
     padding-top: 10rem;
 }
+.sh {
+    text-shadow: 2px 2px blue;
+}

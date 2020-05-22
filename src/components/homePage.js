@@ -6,7 +6,7 @@ const Home = () => {
         <React.Fragment>
             <div className="jumbotron bg jumbotron-fluid text-white d-flex justify-content-center aligin-items-center ">
                 <div className="container text-center">
-                    <h1 className="text-primary display-1 text-uppercase">
+                    <h1 className="text-primary display-1 text-uppercase sh">
                         amin khodro
                     </h1>
                     <p
