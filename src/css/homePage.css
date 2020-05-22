@@ -9,3 +9,18 @@
 .sh {
     text-shadow: 2px 2px blue;
 }
+.inline {
+    display: inline-flex;
+    width: 50%;
+    background-color: ;
+    align-items: center;
+    justify-content: center;
+}
+.lam {
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.cars {
+    margin-bottom: 10px;
+    background-color: #333333;
+}

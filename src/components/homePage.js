@@ -20,13 +20,30 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            <div className="container text-center ">
-                <Link className="m-1 btn btn-sm bg-primary" to="/login">
+            <div className="container text-center mb-2 ">
+                <h2 className="lead">
+                    آیا شما میخواهید به حساب کاربری خود وارد شوید یا حساب جدیدی
+                    برای خود بسازید؟
+                </h2>
+                <Link
+                    className="m-1 btn btn-sm bg-primary text-white"
+                    to="/login"
+                >
                     Login
                 </Link>
-                <Link className="m-1 btn btn-sm bg-success" to="/register">
+                <Link
+                    className="m-1 btn btn-sm bg-primary text-white"
+                    to="/register"
+                >
                     register
                 </Link>
+            </div>
+            <div className="d-flex ">
+                <div className="container inline cars">
+                    <div className="lam text-white mr-auto "></div>
+                    <div className="lam text-white mx-auto">slaam</div>
+                    <div className="lam text-white ml-auto ">amin</div>
+                </div>
             </div>
         </React.Fragment>
     );
