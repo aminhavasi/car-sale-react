@@ -40,9 +40,7 @@ const Home = () => {
             </div>
             <div className="d-flex ">
                 <div className="container inline cars">
-                    <div className="lam text-white mr-auto bg-primary ">
-                        asss
-                    </div>
+                    <div className="lam text-white mr-auto ">asss</div>
                     <div className="lam text-white mx-auto">slaam</div>
                     <div className="lam text-white ml-auto ">aیmin</div>
                 </div>
