@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import './../css/homePage.css';
+import NewCars from './newCars';
 
 const Home = () => {
     return (
@@ -38,13 +40,8 @@ const Home = () => {
                     register
                 </Link>
             </div>
-            <div className="d-flex ">
-                <div className="container inline cars">
-                    <div className="lam text-white mr-auto د ">asss</div>
-                    <div className="lam text-white mx-auto">slaam</div>
-                    <div className="lam text-white ml-auto ">aیmin</div>
-                </div>
-            </div>
+            {/* newCar feature */}
+            <NewCars />
         </React.Fragment>
     );
 };
