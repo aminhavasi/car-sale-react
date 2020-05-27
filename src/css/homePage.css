@@ -25,8 +25,5 @@
     background-color: #333333;
 }
 .image {
-    background-size: cover;
-    width: 100%;
-    padding: 1rem;
     border-radius: 50%;
 }
