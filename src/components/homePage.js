@@ -47,6 +47,13 @@ const Home = () => {
             {/* newCar feature */}
 
             <NewCars />
+            {/*  full cars */}
+            <div className="w-100 text-center mb-2">
+                <h3>Click to see all our cars</h3>
+                <Link className="btn btn-primary btn-sm ">
+                    See Full cars...
+                </Link>
+            </div>
         </React.Fragment>
     );
 };

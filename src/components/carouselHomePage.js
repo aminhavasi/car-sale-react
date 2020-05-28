@@ -16,7 +16,7 @@ const Carousel = () => {
                     <div className="carousel-item active">
                         <img
                             src={require('./../resource/img/bmw.jpg')}
-                            alt="Los Angeles"
+                            alt="BMW"
                             width="1100"
                             height="500"
                         />
@@ -28,7 +28,7 @@ const Carousel = () => {
                     <div className="carousel-item">
                         <img
                             src={require('./../resource/img/bmw.jpg')}
-                            alt="Chicago"
+                            alt="FERRARI"
                             width="1100"
                             height="500"
                         />
@@ -40,7 +40,7 @@ const Carousel = () => {
                     <div className="carousel-item">
                         <img
                             src={require('./../resource/img/bmw.jpg')}
-                            alt="New York"
+                            alt="PROCHE"
                             width="1100"
                             height="500"
                         />
