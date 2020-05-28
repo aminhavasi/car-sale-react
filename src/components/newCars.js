@@ -5,6 +5,8 @@ const NewCars = () => {
         <React.Fragment>
             <div className="d-flex ">
                 <div className="container py-3 py-sm-5">
+                    <h3 className="text-center mb-2">What are the new cars?</h3>
+
                     <div
                         className="row  text-center justify-content-center text-white"
                         style={{ backgroundColor: '#1a1a1a' }}
@@ -82,6 +84,7 @@ const NewCars = () => {
                             <p className="bg-warning">5600$</p>
                         </div>
                     </div>
+                    <hr />
                 </div>
             </div>
         </React.Fragment>

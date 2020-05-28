@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './../css/homePage.css';
 import NewCars from './newCars';
+import Carousel from './carouselHomePage';
 
 const Home = () => {
     return (
@@ -39,8 +40,12 @@ const Home = () => {
                 >
                     register
                 </Link>
+                <hr />
             </div>
+
+            <Carousel />
             {/* newCar feature */}
+
             <NewCars />
         </React.Fragment>
     );
