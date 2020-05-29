@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NavBar from './navBar';
 import Footer from '../common/footer';
 import getPosts from './../../services/fakePosts';
+import Pagination from '../common/pagination';
 
 const AllCars = () => {
     return (
@@ -50,6 +51,12 @@ const AllCars = () => {
                         </div>
                     </div>
                 ))}
+                <Pagination
+                // itemCount={totalCount}
+                // pageSize={pageSize}
+                // currentPage={currentPage}
+                // onPageChange={this.handelPageChange}
+                />
             </main>
             <Footer />
         </React.Fragment>
