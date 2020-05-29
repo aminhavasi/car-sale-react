@@ -17,10 +17,10 @@ const Footer = () => {
                                     <Link to="/">Whts's news</Link>
                                 </li>{' '}
                                 <li>
-                                    <Link href="#">Support</Link>
+                                    <Link to="#">Support</Link>
                                 </li>{' '}
                                 <li>
-                                    <Link href="#">My account</Link>
+                                    <Link to="#">My account</Link>
                                 </li>{' '}
                                 <li>
                                     <a href="#">Cansel Subscription</a>
