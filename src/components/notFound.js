@@ -11,8 +11,7 @@ const NotFound = () => {
         <p className="display-4">Opps!!</p>
         <p>page not found!</p>
         <Link className="btn btn-primary btn-sm" to="/">
-          Go Back to HomePage
-          
+          Go Back to HomePagesd
         </Link>
       </div>
     </div>
